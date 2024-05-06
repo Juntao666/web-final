@@ -1,0 +1,1 @@
+This is a website about my own photography portfolio. There are home page, portfolio pages, and a contact page. There is a navigation bar on the home page, and there are my photography works in the portfolio pages. When you click the pictures, it will show parameters of the picture. And in the contact page, you can click the logos to find my social media accounts. 
