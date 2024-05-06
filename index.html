@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juntao Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="app.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="#">Juntao-Portfolio</a></div>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="pages">
+
+            <section class="hidden" id="Home">
+                <h1>Hi, this is Juntao Liu </h1>
+                <p>Welcome to my photography world!</p>
+                <img src = "photo/myself.jpg" alt = "a photo of myself" width="700">
+                <p style="margin-top: 200px;">tips: click pictures below to see parameters</p>
+            </section>  
+    
+            <section class="hidden" id="Portfolio">
+                <h2>
+                    Cherry blossoms on Roosevelt Island
+                </h2>
+                <a class="port-image-link" onclick="showMore('cherry')">
+                    <img src="photo/cherryblossom.jpg" alt="Cherry blossoms on Roosevelt Island" width="1000">
+                </a>
+                <p id="cherry" style="display:none;">
+                    ISO200  61mm  0.3ev  f6.4  1/280s
+                </p>
+            </section>
+
+            <section class="hidden">
+                <h2>
+                    Laguna beach
+                </h2>
+                <a class="port-image-link" onclick="showMore('laguna')">
+                    <img src="photo/laguna.JPG" alt="Laguna beach" width="1000">
+                </a>
+                <p id="laguna" style="display:none;">
+                    ISO800  104mm  -0.3ev  f5.6  1/4000s
+                </p>
+            </section>
+
+            <section class="hidden">
+                <h2>
+                    Night sky through the porthole
+                </h2>
+                <a class="port-image-link" onclick="showMore('plane')">
+                    <img src="photo/plane.jpeg" alt="Night sky through the porthole" width="1000">
+                </a>
+                <p id="plane" style="display:none;">
+                    ISO10000  27mm  0ev  f3.5  1.0s
+                </p>
+            </section>
+
+            <section class="hidden">
+                <h2>
+                    Pine cones in the woods of Vermont
+                </h2>
+                <a class="port-image-link" onclick="showMore('pine')">
+                    <img src="photo/pinecone.jpeg" alt="Pine cones in the woods of Vermont" width="1000">
+                </a>
+                <p id="pine" style="display:none;">
+                    ISO800  223mm  1ev  f5.6  1/58s
+                </p>
+            </section>
+
+            <section class="hidden">
+                <h2>
+                    The mailbox in front of the Portland Lighthouse
+                </h2>
+                <a class="port-image-link" onclick="showMore('mailbox')">
+                    <img src="photo/mailbox.jpeg" alt="The mailbox in front of the Portland Lighthouse" width="1000">
+                </a>
+                <p id="mailbox" style="display:none;">
+                    ISO320  200mm  -1.5ev  f2.8  1/8000s
+                </p>
+            </section>
+
+            <section class="hidden">
+                <h2>
+                    Overlooking Shenzhen from Wutong Mountain
+                </h2>
+                <a class="port-image-link" onclick="showMore('shenzhen')">
+                    <img src="photo/shenzhen.jpeg" alt="Overlooking Shenzhen from Wutong Mountain" width="1000">
+                </a>
+                <p id="shenzhen" style="display:none;">
+                    ISO1600  104mm  -1ev  f5  1/80s
+                </p>
+            </section>
+    
+            <section class="hidden" id="About">
+                <h2>Contact me here!</h2>
+                <div class="logos">
+                    <div class="logo hidden">
+                        <a href="https://www.instagram.com/jack.juntao/" class="image-link">
+                            <img src="photo/ig.png" alt="logo of instagram" width="100" class="logo">
+                        </a>
+                    </div>
+                    <div class="logo hidden">
+                        <a href="https://www.xiaohongshu.com/user/profile/5dddedde00000000010096ac?xhsshare=WeixinSession&appuid=5dddedde00000000010096ac&apptime=1714939486" class="image-link">
+                            <img src="photo/redbook.png" alt="logo of redbook" width="98" class="logo">
+                        </a>
+                    </div>
+                    <div class="logo hidden">
+                        <a href="https://www.douyin.com/user/MS4wLjABAAAANlWnZsgySSVfQvtBDcn89rd3Wkb27C6NOwA67LJR69s" class="image-link">
+                            <img src="photo/tiktok.png" alt="logo of tiktok" width="100" class="logo">
+                        </a>    
+                    </div>
+                    <div class="logo hidden">
+                        <a href="https://wa.me/916176453321" class="image-link">
+                            <img src="photo/whatsapp.png" alt="logo of whatsapp" width="100" class="logo">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p class="contact">Email: jl13036@nyu.edu</p>
+        </footer>
+
+    </body>
+
+</html>

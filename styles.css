@@ -1,0 +1,173 @@
+:root {
+    color-scheme: light dark;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('PoetsenOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Applying custom font to site */
+h1{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'CustomFont', sans-serif;
+}
+
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background: lightblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: black;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    color: darkolivegreen;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px; 
+    border: 2px solid transparent; 
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    border: 2px solid ;
+}
+
+a:active {
+    color: black;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+    place-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms
+}
+
+footer {
+    text-align: center;
+}
+
+.image-link {
+    display: inline-block;
+    border: none;
+    outline: none;
+}
+
+.image-link:hover {
+    opacity: 0.8; 
+    transform: scale(1.05); 
+    border: none;
+    outline: none;
+}
+
+.image-link:active {
+    opacity: 0.6; 
+    transform: scale(1);
+}
+
+.port-image-link:hover { 
+    transform: scale(1.05); 
+    border: none;
+    outline: none;
+}
+
+.port-image-link:active {
+    opacity: 0.6; 
+    transform: scale(1);
+}
+
+main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 300px;
+    }
+    .logo {
+        width: 50px;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        align-content: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background: deepskyblue;
+    }
+    a {
+        color: white;
+    }
+}
+
